@@ -178,3 +178,14 @@ print(foo(2, 3))
 # 19*. Convert (8) to regular function
 # (8)
 # foo = lambda x, y, z: z if y < x and x > z else y
+print("\r\n Part 19.\n")
+
+
+def foo(x, y, z):
+    if y < x & x > z:
+        return z
+    else:
+        return y
+
+
+print(foo(2, 3, 8))
