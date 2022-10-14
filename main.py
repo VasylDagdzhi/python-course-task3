@@ -153,3 +153,11 @@ print(d)
 # 17*. Convert (6) to regular for with if-else.
 # (6)
 # dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
+print("\r\n Part 17.\n")
+d = {}
+for num in range(10):
+    if num ** 3 % 4 == 0:
+        d[num] = num ** 3
+    else:
+        d[num] = num
+print(d)
