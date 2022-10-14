@@ -71,3 +71,7 @@ print("Anna has {apples} apples and {peaches} peaches.".format(apples=apples, pe
 print("\r\n Part 8.\n")
 
 print("Anna has {apples:5} apples and {peaches:3} peaches.".format(apples=apples, peaches=peaches))
+
+print("\r\n Part 9.\n")
+
+print(f"Anna has {apples} apples and {peaches} peaches.")
