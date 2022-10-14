@@ -79,3 +79,9 @@ print(f"Anna has {apples} apples and {peaches} peaches.")
 print("\r\n Part 10.\n")
 
 print("Anna has %(apples)s apples and %(peaches)s peaches." % { "apples": apples, "peaches": peaches })
+
+print("\r\n Part 11.\n")
+
+dict_11 = {'apples': apples, 'peaches': peaches}
+print("Anna has %(apples)s apples and %(peaches)s peaches." % { "apples": dict_11['apples'],
+                                                                "peaches": dict_11['peaches'] })
