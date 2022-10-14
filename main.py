@@ -48,3 +48,18 @@ for i in builtin_types:
         print(f"lst_d is a type of: {i} \r")
     if isinstance(dict_e, i):
         print(f"dict_e is a type of: {i} \r")
+
+
+# String formatting:
+# Replace the placeholders with a value:
+# "Anna has ___ apples and ___ peaches."
+
+print("\r\n Part 5.\n")
+
+apples = int_a
+peaches = int(int_a / 5)
+print("Anna has {} apples and {} peaches.".format(apples, peaches))
+
+print("\r\n Part 6.\n")
+
+print("Anna has {1} apples and {0} peaches.".format(peaches, apples))
