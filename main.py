@@ -189,3 +189,18 @@ def foo(x, y, z):
 
 
 print(foo(2, 3, 8))
+
+lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
+
+# 20. Sort lst_to_sort from min to max
+print("\r\n Part 20.\n")
+lst_to_sort.sort()
+print(lst_to_sort)
+
+# 21. Sort lst_to_sort from max to min
+print("\r\n Part 21.\n")
+lst_to_sort.sort(reverse=True)
+print(lst_to_sort)
+
+# 22. Use map and lambda to update the lst_to_sort by multiply each element by 2
+# 23*. Raise each list number to the corresponding number on another list:
