@@ -34,7 +34,7 @@ print("\r\n Part 4.\n")
 
 # we get the list of all types available in Python and place them in a list
 builtin_types = [getattr(builtins, i) for i in dir(builtins) if isinstance(getattr(builtins, i), type)]
-# since all of the variable types are also objects we remove the type 'object' from the list to leave only exact types
+# since all the variable types are also objects we remove the type 'object' from the list to leave only exact types
 builtin_types.remove(builtins.object)
 # next we check with isinstance each of our variables in a cycle to determine which type they are
 for i in builtin_types:
@@ -78,10 +78,10 @@ print(f"Anna has {apples} apples and {peaches} peaches.")
 
 print("\r\n Part 10.\n")
 
-print("Anna has %(apples)s apples and %(peaches)s peaches." % { "apples": apples, "peaches": peaches })
+print("Anna has %(apples)s apples and %(peaches)s peaches." % {"apples": apples, "peaches": peaches})
 
 print("\r\n Part 11.\n")
 
 dict_11 = {'apples': apples, 'peaches': peaches}
-print("Anna has %(apples)s apples and %(peaches)s peaches." % { "apples": dict_11['apples'],
-                                                                "peaches": dict_11['peaches'] })
+print("Anna has %(apples)s apples and %(peaches)s peaches." % {"apples": dict_11['apples'],
+                                                               "peaches": dict_11['peaches']})
