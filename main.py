@@ -146,7 +146,7 @@ print(dict_14)
 print("\r\n Part 16.\n")
 d = {}
 for num in range(10):
-    if num**3 % 4 == 0:
+    if num ** 3 % 4 == 0:
         d[num] = num ** 3
 print(d)
 
@@ -161,3 +161,20 @@ for num in range(10):
     else:
         d[num] = num
 print(d)
+
+# Lambda:
+
+# 18. Convert (7) to lambda function
+# (7)
+# def foo(x, y):
+#     if x < y:
+#         return x
+#     else:
+#         return y
+print("\r\n Part 18.\n")
+foo = lambda x, y: x if x < y else y
+print(foo(2, 3))
+
+# 19*. Convert (8) to regular function
+# (8)
+# foo = lambda x, y, z: z if y < x and x > z else y
