@@ -103,6 +103,16 @@ print("Anna has %(apples)s apples and %(peaches)s peaches." % {"apples": dict_11
 # 13. Convert (2) to regular for with if-else
 
 print("\r\n Part 12.\n")
-lst = [num ** 2 if num % 2 == 1 else num ** 4 for num in range(10)]
+lst_comp = [num ** 2 if num % 2 == 1 else num ** 4 for num in range(10)]
+print(lst_comp)
+
+print("\r\n Part 13.\n")
+lst = []
+for num in range(10):
+    if num % 2 == 0:
+        lst.append(num // 2)
+    else:
+        lst.append(num * 10)
 print(lst)
+
 
