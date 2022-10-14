@@ -114,22 +114,6 @@ for num in range(10):
         lst.append(num * 10)
 print(lst)
 
-# (4)
-# d = {}
-# for num in range(1, 11):
-#     if num % 2 == 1:
-#         d[num] = num ** 2
-#     else:
-#         d[num] = num // 0.5
-# print(d)
-#
-# (5)
-# dict_comprehension = {x: x**3 for x in range(10) if x**3 % 4 == 0}
-#
-# (6)
-# dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
-
-
 # 14. Convert (3) to dict comprehension.
 # (3)
 # d = {}
@@ -142,5 +126,30 @@ dict_13 = {num: num ** 2 for num in range(1, 11) if num % 2 == 1}
 print(dict_13)
 
 # 15*. Convert (4) to dict comprehension.
+# (4)
+# d = {}
+# for num in range(1, 11):
+#     if num % 2 == 1:
+#         d[num] = num ** 2
+#     else:
+#         d[num] = num // 0.5
+# print(d)
+
+print("\r\n Part 15.\n")
+dict_14 = {num: num ** 2 if num % 2 == 1 else num // 0.5 for num in range(1, 11)}
+print(dict_14)
+
 # 16. Convert (5) to regular for with if.
+# (5)
+# dict_comprehension = {x: x**3 for x in range(10) if x**3 % 4 == 0}
+
+print("\r\n Part 16.\n")
+d = {}
+for num in range(10):
+    if num**3 % 4 == 0:
+        d[num] = num ** 3
+print(d)
+
 # 17*. Convert (6) to regular for with if-else.
+# (6)
+# dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
