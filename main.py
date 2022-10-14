@@ -49,7 +49,6 @@ for i in builtin_types:
     if isinstance(dict_e, i):
         print(f"dict_e is a type of: {i} \r")
 
-
 # String formatting:
 # Replace the placeholders with a value:
 # "Anna has ___ apples and ___ peaches."
@@ -115,4 +114,33 @@ for num in range(10):
         lst.append(num * 10)
 print(lst)
 
+# (4)
+# d = {}
+# for num in range(1, 11):
+#     if num % 2 == 1:
+#         d[num] = num ** 2
+#     else:
+#         d[num] = num // 0.5
+# print(d)
+#
+# (5)
+# dict_comprehension = {x: x**3 for x in range(10) if x**3 % 4 == 0}
+#
+# (6)
+# dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
 
+
+# 14. Convert (3) to dict comprehension.
+# (3)
+# d = {}
+# for num in range(1, 11):
+#     if num % 2 == 1:
+#         d[num] = num ** 2
+# print(d)
+print("\r\n Part 14.\n")
+dict_13 = {num: num ** 2 for num in range(1, 11) if num % 2 == 1}
+print(dict_13)
+
+# 15*. Convert (4) to dict comprehension.
+# 16. Convert (5) to regular for with if.
+# 17*. Convert (6) to regular for with if-else.
