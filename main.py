@@ -203,4 +203,14 @@ lst_to_sort.sort(reverse=True)
 print(lst_to_sort)
 
 # 22. Use map and lambda to update the lst_to_sort by multiply each element by 2
+print("\r\n Part 22.\n")
+
+lst_x2 = list(map(lambda x: x * 2, lst_to_sort))
+print(lst_x2)
+
 # 23*. Raise each list number to the corresponding number on another list:
+print("\r\n Part 23.\n")
+list_A = [2, 3, 4]
+list_B = [5, 6, 7]
+lst_raised = list(map(lambda x, y: x ** y, list_A,list_B))
+print(lst_raised)
