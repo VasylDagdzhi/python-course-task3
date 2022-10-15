@@ -232,4 +232,3 @@ list_2 = [2, 3, 5, 6, 7, 8]
 print("\r\n Part 26.\n")
 lst_common = list(filter(lambda x: x in list_2, list_1))
 print(lst_common)
-
