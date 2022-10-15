@@ -221,8 +221,13 @@ lst_filtered = list(filter(lambda x: x % 2 == 1, lst_to_sort))
 print(lst_filtered)
 
 # 25. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
+print("\r\n Part 25.\n")
+b = list(range(-10, 10))
+b_negative = list(filter(lambda x: x < 0, b))
+print(b_negative)
+
 # 26*. Using the filter function, find the values that are common to the two lists:
 list_1 = [1, 2, 3, 5, 7, 9]
 list_2 = [2, 3, 5, 6, 7, 8]
-
+print("\r\n Part 26.\n")
 
