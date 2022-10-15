@@ -212,7 +212,7 @@ print(lst_x2)
 print("\r\n Part 23.\n")
 list_A = [2, 3, 4]
 list_B = [5, 6, 7]
-lst_raised = list(map(lambda x, y: x ** y, list_A,list_B))
+lst_raised = list(map(lambda x, y: x ** y, list_A, list_B))
 print(lst_raised)
 
 # 24. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
@@ -222,7 +222,7 @@ print(lst_filtered)
 
 # 25. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
 # 26*. Using the filter function, find the values that are common to the two lists:
-list_1 = [1,2,3,5,7,9]
-list_2 = [2,3,5,6,7,8]
+list_1 = [1, 2, 3, 5, 7, 9]
+list_2 = [2, 3, 5, 6, 7, 8]
 
 
